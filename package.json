@@ -1,8 +1,8 @@
 {
-  "name": "Ezyto",
+  "name": "ezyto",
   "version": "1.0.11",
   "private": true,
-  "proxy": "http://localhost:5000",
+  "proxy": "https://ezoto-372816.uc.r.appspot.com/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
