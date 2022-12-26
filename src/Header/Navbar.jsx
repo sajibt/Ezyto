@@ -21,7 +21,6 @@ const Navbar = () => {
       return item.username;
     });
   });
-  console.log(name[0], "fucking name");
   const { mode } = useContext(ThemeContext);
   const [open, setOpen] = useState(false);
   const [burger, setBurger] = useState(false);

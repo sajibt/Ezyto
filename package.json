@@ -2,7 +2,7 @@
   "name": "ezyto",
   "version": "1.0.11",
   "private": true,
-  "proxy": "https://ezoto-372816.uc.r.appspot.com/",
+  "proxy": "https://ezoto-372816.uc.r.appspot.com:5000/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
