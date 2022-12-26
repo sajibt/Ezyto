@@ -1,0 +1,91 @@
+@use "../../scss/wom.scss" as *;
+.search_wrapper {
+  color: rgb(47, 38, 38);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  position: relative;
+}
+
+.search {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  justify-content: center;
+  position: absolute;
+  padding: 1rem;
+  color: $w2;
+
+  &__input {
+    height: 1.2rem;
+    border-radius: 0.6rem;
+    padding: 0.7rem;
+    text-align: center;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 80%;
+    outline: none;
+    font-family: $b-font;
+    font-weight: 300;
+    font-size: 14px;
+    height: 37px;
+    background: transparent;
+    border: 2px solid $ms-black;
+    outline: none;
+    border-radius: 37px;
+    transition: all 700ms ease;
+    letter-spacing: 0.1em;
+    position: absolute;
+    pointer-events: all;
+    transition: border 0.25s ease, width 0.125s ease 0.125s;
+
+    &:focus {
+      border: 2px solid $color2;
+      opacity: 1;
+      width: 100%;
+      margin: auto;
+      cursor: text;
+    }
+  }
+
+  &__svg {
+    position: absolute;
+    margin: 8px;
+    margin-left: 1rem;
+    font-size: 1rem;
+    align-items: center;
+    transition: background-color 0.5s;
+    color: $ms-black;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .search_wrapper {
+    padding-top: 1rem;
+  }
+  .search {
+    padding-bottom: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    &__input {
+      width: 90%;
+      position: relative;
+      &:focus {
+        margin: auto;
+        width: 100%;
+      }
+    }
+
+    &__svg {
+      position: absolute;
+      margin: 8px;
+      margin-left: 2rem;
+      font-size: 1rem;
+      align-self: flex-start;
+    }
+  }
+}

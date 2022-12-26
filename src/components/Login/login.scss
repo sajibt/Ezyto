@@ -1,0 +1,92 @@
+@use "../../scss/wom.scss" as *;
+.form {
+  position: relative;
+  z-index: 1;
+  flex-basis: 500px;
+  padding: 45px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $ms-white;
+
+  .login {
+    padding-top: 2rem;
+    background-color: $w1;
+    width: 400px;
+    border-radius: 1.2rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    .input_email,
+    .input_pass {
+      input {
+        height: 2.4rem;
+        max-width: 450px;
+        color: $black;
+        height: 50px;
+        padding: 1rem 1.5rem;
+        border: none;
+        border-radius: 12px;
+        outline: 0px solid #5181e022;
+        font-size: 0.875rem;
+        font-family: $b-font;
+        letter-spacing: 1px;
+        box-shadow: 0 4px 10px #5181e011;
+        appearance: none;
+        color: $black;
+        transition: 50ms;
+      }
+      padding: 1rem 0 0.6rem 0;
+      margin-bottom: 0.8rem;
+      border-radius: 14px;
+      border-radius: 1rem;
+      transition: all 0.3 ease;
+      cursor: pointer;
+
+      ::-webkit-input-placeholder {
+        text-align: center;
+      }
+
+      :-moz-placeholder {
+        text-align: center;
+      }
+    }
+    .s_btn {
+      padding: 0.5rem;
+      width: 5rem;
+      color: $black;
+      border-radius: 0.6rem;
+      font-family: $b-font;
+      text-transform: uppercase;
+      letter-spacing: 0.2px;
+      border: none;
+      height: auto;
+      font-size: 14px;
+      background-color: $w2;
+      &:active,
+      &:focus {
+        box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+      }
+      &:hover {
+        background-color: #102770;
+        color: $white;
+        box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+      }
+    }
+
+    .message {
+      margin: 15px 0 0;
+      color: $black;
+      font-size: 12px;
+    }
+    .message a {
+      // color: $w2;
+      color: rgb(0 0 0 / 63%);
+      text-decoration: none;
+    }
+    .register-form {
+      display: none;
+    }
+  }
+}

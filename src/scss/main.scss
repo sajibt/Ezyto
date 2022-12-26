@@ -1,0 +1,283 @@
+@use "wom" as *;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $ms-white;
+  font-family: $font;
+  width: 100%;
+  min-height: 100vh;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+// Theme Section
+.light {
+  background-color: $w2;
+
+  // Navbar Section
+
+  .nav_container {
+    background-color: $w2;
+    nav {
+      .right-nav {
+        &__btn {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+//Dark Mode
+
+.dark {
+  background-color: $d4;
+
+  //List Item Section
+
+  //sign in  and sign up
+  .form {
+    background-color: $d4;
+    .login,
+    .signup {
+      background-color: $ms-black;
+      .s_btn {
+        color: white;
+        background-color: $d1;
+      }
+      .message {
+        color: $white;
+        a {
+          color: $color3;
+        }
+      }
+    }
+  }
+
+  .item_card {
+    color: $white;
+    .item_card__details {
+      background-color: $ms-black;
+      .full_read {
+        background-color: $ms-black;
+      }
+      .notes_content {
+        background-color: $ms-black;
+        color: $white;
+
+        .read_sec {
+          .read_icon {
+            color: $white;
+          }
+        }
+      }
+      .inner-btn {
+        background-color: $ms-black;
+        &::after {
+          background-color: $ms-black;
+        }
+
+        .note_time {
+          color: $white;
+        }
+        .ms-button {
+          background-color: $d1;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  //Navbar Section
+
+  .nav_container {
+    color: $ms-white;
+    background: $d3;
+    .logo {
+      color: $ms-white;
+    }
+    nav {
+      .menuToggle {
+        color: $ms-white;
+      }
+      .menu {
+        li {
+          a {
+            color: $white;
+          }
+        }
+      }
+
+      .middlen {
+        .middle-nav {
+          .navbtn {
+            font-weight: bold;
+            &::after {
+              color: white;
+              background: $d1;
+            }
+          }
+          a {
+            // color: $white;
+
+            &:visited {
+              color: $white;
+            }
+          }
+          &__btn {
+            background-color: $color3;
+          }
+        }
+      }
+
+      .right-nav {
+        a {
+          color: $ms-white;
+          &:hover {
+            border-color: $color4;
+          }
+        }
+        &__btn {
+          color: $white;
+          background-color: $color3;
+        }
+      }
+      .open {
+        background-color: $ms-black;
+      }
+    }
+  }
+
+  //Search Section
+
+  .search_wrapper {
+    color: white;
+  }
+
+  .search {
+    &__input {
+      border: 2px solid $color3;
+
+      color: $white;
+      &:focus {
+      }
+    }
+
+    &__svg {
+      color: $color3;
+    }
+  }
+
+  //Home Section
+
+  .main_section {
+    .add_icon {
+      .svg {
+        color: $color3;
+      }
+    }
+  }
+
+  //Add note section
+
+  .form_section {
+    background-color: $ms-black;
+    .form_container {
+      .add-note {
+        color: $white;
+      }
+      .form_input {
+        .form_title {
+          &__input {
+            color: $ms-black;
+            &:hover {
+              background-color: $app;
+            }
+            &:focus {
+              border-color: $d1;
+            }
+          }
+        }
+        .form_note {
+          .textarea {
+            background-color: $ms-white;
+            color: $ms-black;
+            &:hover {
+              background-color: $app;
+            }
+            &:focus {
+              border-color: $d1;
+            }
+          }
+        }
+      }
+
+      .add_btn {
+        background-color: $d1;
+        color: $white;
+        letter-spacing: 1px;
+        box-shadow: 0 8px 24px 0 rgba(61, 154, 221, 0.2);
+        &:hover {
+          background-color: $w3;
+          color: $black;
+        }
+      }
+    }
+  }
+
+  //Footre
+
+  .footer {
+    background-color: $d3;
+    .about {
+      color: $white;
+    }
+
+    .us {
+      color: $white;
+    }
+  }
+}
+
+////////////////////////////////////
+///
+///
+///
+section {
+  padding: 30px 25px;
+}
+
+section > * {
+  margin: 10px;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 2px;
+  }
+
+  section > * {
+    margin: 2px;
+  }
+}
