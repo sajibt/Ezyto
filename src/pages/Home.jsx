@@ -9,7 +9,7 @@ import Bars from "../components/List/Bars.tsx";
 import useAuthContext from "../Hooks/useAuthContext";
 import { IoIosAddCircle, IoIosCloseCircle } from "react-icons/io";
 
-const base = "/notes/";
+const base = "https://api-dot-ezoto-372816.uc.r.appspot.com/notes/";
 const Home = () => {
   const { notes, dispatch } = useNotesContext();
   const { user } = useAuthContext();

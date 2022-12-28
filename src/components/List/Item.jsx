@@ -5,7 +5,12 @@ import useAuthContext from "../../Hooks/useAuthContext";
 import useNotesContext from "../../Hooks/useNotesContext";
 import { AiOutlineRead } from "react-icons/ai";
 import { BiCommentEdit } from "react-icons/bi";
-import { MdReadMore, MdDeleteOutline } from "react-icons/md";
+import {
+  MdReadMore,
+  MdDeleteOutline,
+  MdOutlineSave,
+  MdCancelPresentation,
+} from "react-icons/md";
 
 const Item = ({ note }) => {
   const { url, dispatch } = useNotesContext();
@@ -15,7 +20,7 @@ const Item = ({ note }) => {
   const [see, setSee] = useState(false);
 
   function handleRead() {
-    if (note.description.length > 300) {
+    if (note.description.length > 200) {
       return setRead((p) => !p);
     }
   }
@@ -111,7 +116,7 @@ const Item = ({ note }) => {
         <form onSubmit={handleSubmit}>
           <div className="notes_content">
             <div className="edit-notes">
-              <h3>Edit</h3>
+              <h3>Edit Note</h3>
               <input
                 className="inputarea"
                 type="text"
@@ -133,14 +138,14 @@ const Item = ({ note }) => {
 
           <div className="inner-btn">
             <button className="ms-button" type="submit">
-              Save{" "}
+              <MdOutlineSave />
             </button>
             <button
               className="ms-button"
               onClick={() => {
                 setisEdit(false);
               }}>
-              cancel
+              <MdCancelPresentation />
             </button>
           </div>
         </form>
@@ -150,7 +155,7 @@ const Item = ({ note }) => {
     NotesContent = (
       <>
         <div className="notes_content">
-          <h4>{note.title}</h4>
+          <h4 className="title_notes">{note.title}</h4>
           <p>{note.description.slice(0, 200)} </p>
           <div className="read_sec" onClick={handleRead}>
             {" "}
@@ -177,9 +182,7 @@ const Item = ({ note }) => {
             })}
           </span>
           <button className="ms-button" onClick={handleDelete}>
-            <span>
-              <MdDeleteOutline />
-            </span>
+            <MdDeleteOutline />
           </button>
         </div>
       </>

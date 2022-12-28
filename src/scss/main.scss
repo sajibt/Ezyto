@@ -65,6 +65,7 @@ body {
     color: $white;
     .item_card__details {
       background-color: $ms-black;
+      box-shadow: -2px 3px 11px 0 rgba(30, 29, 43, 0.54);
       .full_read {
         background-color: $ms-black;
       }

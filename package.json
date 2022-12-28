@@ -1,8 +1,7 @@
 {
   "name": "ezyto",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "private": true,
-  "proxy": "https://ezoto-372816.uc.r.appspot.com:5000/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -15,6 +14,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "sass": "^1.54.9",
+    "serve": "^14.1.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

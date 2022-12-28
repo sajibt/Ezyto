@@ -17,7 +17,7 @@ const List = ({ term }) => {
         return;
       }
       const response = await axios(
-        "/notes",
+        "https://api-dot-ezoto-372816.uc.r.appspot.com/notes",
 
         {
           headers: {

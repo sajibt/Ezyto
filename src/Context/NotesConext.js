@@ -3,7 +3,7 @@ import React, { createContext, useEffect, useReducer, useState } from "react";
 
 export const NotesConext = createContext();
 
-const base = "/notes/";
+const base = "https://api-dot-ezoto-372816.uc.r.appspot.com/notes/";
 function notesReducer(state, action) {
   switch (action.type) {
     case "FETCH_INIT":
