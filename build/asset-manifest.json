@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.295594ff.css",
+    "main.js": "/static/js/main.9d6cb3eb.js",
+    "static/media/FontsFree-Net-Mont-Bold.ttf": "/static/media/FontsFree-Net-Mont-Bold.10a31626fbf3adcb20f0.ttf",
+    "static/media/Mont-ExtraLightDEMO.otf": "/static/media/Mont-ExtraLightDEMO.7500479912b782061a72.otf",
+    "static/media/Lato-Light.ttf": "/static/media/Lato-Light.bfc37ff1d5543ecd4ec6.ttf",
+    "static/media/Lato-Bold.ttf": "/static/media/Lato-Bold.5dd5aa0269395f0ea927.ttf",
+    "index.html": "/index.html",
+    "main.295594ff.css.map": "/static/css/main.295594ff.css.map",
+    "main.9d6cb3eb.js.map": "/static/js/main.9d6cb3eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.295594ff.css",
+    "static/js/main.9d6cb3eb.js"
+  ]
+}
